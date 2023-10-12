@@ -1,0 +1,65 @@
+/* GLOBAL */
+
+:root {
+    --nav-height: 3rem;
+
+    --nav-background-color: #bada55;
+    --nav-submenu-background-color: green;
+
+    --link-background-color: #abd130;
+    --link-background-color-onhover: #95bb15;
+    --link-text-color: #000;
+    --link-space: 2rem;
+}
+
+/* NAV */
+.repsponsive-nav {
+    height: var(--nav-height);
+    background: var(--nav-background-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.repsponsive-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.repsponsive-nav ul a {
+    text-decoration: none;
+    color: var(--link-text-color);
+}
+
+.repsponsive-nav .first-level {
+    display: flex;
+    margin-right: var(--link-space);
+}
+
+.repsponsive-nav .first-level li {
+    position: relative;
+}
+
+.repsponsive-nav .first-level > li a {
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+    padding: 0 calc(var(--link-space)/2);
+    transition: .2s;
+}
+
+.repsponsive-nav .first-level > li a:hover {
+    background: var(--link-background-color-onhover);
+}
+
+.repsponsive-nav .second-level {
+    position: absolute;
+    left: 0;
+    top: var(--nav-height);
+    background: var(--nav-submenu-background-color);
+    padding: 0 2rem;
+}
+
+.repsponsive-nav .second-level li a {
+    padding: 0 1rem;
+}

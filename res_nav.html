@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive nav</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="res_nav.css">
 </head>
 <body>
-    <nav>
-        <ul>
+    <nav class="responsive-nav">
+        <div class="logo">Your logo</div>
+        <ul class="first-level">
             <li>
                 <a href="index.html">Home</a>
             </li>
             <li>
                 <a href="#">Products ▼</a>
-                <ul>
+                <ul class="second-level">
                     <li><a href="#">Product 1</a></li>
                     <li><a href="#">Product 2</a></li>
                     <li><a href="#">Product 3</a></li>
