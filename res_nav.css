@@ -123,8 +123,15 @@ body {
     }
 
     .responsive-nav .first-level.toggled {
+        display: block;
         position: absolute;
         top: var(--nav-height);
+        left: 0;
         width: 100%;
+        background: var(--nav-submenu-background-color);
+    }
+
+    .responsive-nav .first-level.toggled li a {
+        color: var(--link-text-color-submenu);
     }
 }
